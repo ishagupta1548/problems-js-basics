@@ -1,10 +1,10 @@
 // //problem 1
-// console.log(y);
 // y = 1;
+// console.log(y);
 
 // // problem 2
-// console.log(y)
-// var y =1
+// var y = 1;
+// console.log(y);
 
 // //problem 3
 // console.log(y);
@@ -13,34 +13,73 @@
 // var y;
 
 // //problem 4
-// console.log(x)
+// console.log(x);
 // let x;
-// console.log(x)
+// console.log(x);
+
+// problem
+
+var x = 4;
+if (x == 4) {
+  console.log(x);
+  let a = 3;
+  console.log(a);
+}
+console.log(x);
+console.log(a);
 
 // temporal deadzone
 
 // //problem 5
-// function x () {
-//     console.log("value in local scope", a)
+// function x() {
+//   console.log("This is inside function", a);
+//   var a = 5;
+//   console.log("value in local scope", a);
 // }
-// console.log("value in gloabl scope", a)
+// console.log("value in gloabl scope", a);
 // var a = 2;
+// console.log("Value of a after calling the function", a);
+// console.log("this is after execution");
 // x();
-// console.log("this is after execution")
+
+// proble
+
+// function test() {
+//   console.log("Before declaration: ", x);
+//   var x = 10;
+//   console.log("After declaration: ", x);
+// }
+// console.log("Outside function: ", x);
+// var x = 20;
+// test();
+// console.log("Outside after function call: ", x);
+
+// // problem
+// function first() {
+//   console.log("Inside first");
+//   second();
+// }
+
+// function second() {
+//   console.log("Inside second");
+// }
+
+// first();
+// console.log("End of script");
 
 // //problem 6
-// var y = 10;
+// let y = 10;
 // test();
 // test1();
 // console.log(y);
 
 // function test() {
-//   var y = 30;
+//   let y = 30;
 //   console.log(y);
 // }
 
 // function test1() {
-//   var y = 80;
+//   let y = 80;
 //   console.log(y);
 // }
 
@@ -55,12 +94,12 @@
 
 // //problem 8
 // function test1() {
-//     var a = 6
-//     console.log(a)
+//   var a = 6;
+//   console.log(a);
 // }
 
 // function a() {
-//     console.log("this is a new function")
+//   console.log("this is a new function");
 // }
 // test1();
 // a();
@@ -69,7 +108,7 @@
 
 /** Closures  **/
 
-//problem 9
+// //problem 9
 
 // function x() {
 //   console.log(a);
@@ -96,7 +135,7 @@
 // x();
 // console.log(a)
 
-// // problem 11
+// // // problem 11
 // console.log("before setTimeout");
 
 // setTimeout(() => {
@@ -107,13 +146,13 @@
 //   console.log("Timer5");
 // }, 5000);
 
-// console.log("hello world");
+// console.log("hello world1");
 
 // setTimeout(() => {
 //   console.log("Timer3");
 // }, 3000);
 
-// console.log("hello world");
+// console.log("hello world2");
 
 // function x() {
 //     console.log("this is inside x")

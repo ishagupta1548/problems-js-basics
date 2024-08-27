@@ -18,20 +18,20 @@
 //     console.log(4);
 // })();
 
-//problem 3
-//Question: Create a function which can be invoked like this
-var addSix = createBase(6);
-addSix(10); // returns 16
-addSix(21); // returns 27
+// //problem 3
+// //Question: Create a function which can be invoked like this
+// var addSix = createBase(6);
+// addSix(10); // returns 16
+// addSix(21); // returns 27
 
-// solution
-function createBase(baseNumber) {
-    return function(N) {
-      // we are referencing baseNumber here even though it was declared
-      // outside of this function. Closures allow us to do this in JavaScript
-      return baseNumber + N;
-    }
-  }
+// // solution
+// function createBase(baseNumber) {
+//     return function(N) {
+//       // we are referencing baseNumber here even though it was declared
+//       // outside of this function. Closures allow us to do this in JavaScript
+//       return baseNumber + N;
+//     }
+//   }
 
 //   var addSix = createBase(6);
 //   const result = addSix(10);

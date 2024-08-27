@@ -1,29 +1,27 @@
-const p1 = new Promise((resolve, reject) => {
+let p1 = new Promise((resolve, reject) => {
   setTimeout(() => {
-    resolve("The promise p1 is resolved");
-  }, 1000);
+    resolve("This is resolved!");
+  }, 3000);
 });
 
-// const p2 = new Promise((resolve, reject) => {
-//     setTimeout(() => {
-//         resolve("The promise p2 is resolved")
-//     }, 10000)
-// })
+let p2 = new Promise((resolve, reject) => {
+  setTimeout(() => {
+    resolve("This is resolved!");
+  }, 7000);
+});
 
 async function resolvePromise() {
-  console.log("Hello");
+  console.log("Entered function");
+  let val = await p2;
+  console.log(val);
+  console.log("hello");
 
-  const data1 = await p1;
+  let val2 = await p1;
 
-  console.log(data1);
-
-  //   p1.then((data) => {
-  //     console.log(data);
-  //   });
-
-  console.log("world");
+  console.log(val2);
+  console.log("hello after p2");
 }
 
 resolvePromise();
 
-console.log("this is after the calling of the funtion");
+console.log("after function!");
