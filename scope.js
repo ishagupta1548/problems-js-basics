@@ -1,8 +1,11 @@
-let fname = "Amit";
+// {
+//   var b = 20;
+//   console.log(b);
+// }
+// console.log(b);
 
-{
-  let age = 30;
-  var age1 = 36;
-  console.log(fname, age, age1);
-}
-console.log(fname, age, age1);
+console.log("a");
+setTimeout(() => {
+  console.log("b");
+}, 2000);
+console.log("c");

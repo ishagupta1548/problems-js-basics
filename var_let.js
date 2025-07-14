@@ -20,3 +20,8 @@ let arr2 = [1, 2, 3];
 
 let arr3 = arr1.slice(-3, -1);
 console.log(arr3);
+
+function sum(a, b) {
+  return a + b;
+}
+sum(2, 3)

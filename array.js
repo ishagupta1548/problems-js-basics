@@ -29,7 +29,7 @@
 // sort
 // let arr = [10.34, 3.44, 5.66, 7, 9.9];
 // let arr1 = [10, 5, 7, 3, 9];
-let arr1 = [2, 6, 3, 10, 8];
+// let arr1 = [2, 6, 3, 10, 8];
 // arr1.sort();
 // console.log(arr1);
 
@@ -61,20 +61,26 @@ Zero or NaN indicates that a and b are considered equal.
 
 // reverse an array
 
-let returnValue = arr1.reverse();
+// let returnValue = arr1.reverse();
 // console.log(returnValue);
 
 // console.log(arr);
 
 // filter method
 
-let sortedPrice = arr1.filter((element, index, arr1) => {
-  if (element > 6) {
-    return true;
-  }
-});
+// let sortedPrice = arr1.filter((element, index, arr1) => {
+//   if (element > 6) {
+//     return true;
+//   }
+// });
 
-console.log(sortedPrice);
+// console.log(sortedPrice);
 // lets say prices only greater than 6
 // returns true or false
 // concat method
+
+// Array functions
+let arr1 = [2, 6, 3, 10, 8];
+let arr2 = ["a", "i", "e"];
+let newArr = [...arr2, ...arr1];
+console.log(newArr);

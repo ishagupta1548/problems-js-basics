@@ -3,35 +3,40 @@
 // console.log(y);
 
 // // problem 2
+// console.log(a);
+// let a = 1;
+// console.log(a);
+
+// //problem 3
+// console.log(a);
+// var a = "hello";
+// a = 3;
+// a = 2;
+// console.log(a);
+
+// // problem 4
+// console.log(a);
+// let x;
+// console.log(x);
+// console.log(y);
 // var y = 1;
 // console.log(y);
 
-// //problem 3
-// console.log(y);
-// y = 2;
-// console.log(y);
-// var y;
+// // problem
 
-// //problem 4
+// var x = 4;
+// if (x == 4) {
+//   console.log(x);
+//   let a;
+//   console.log(a);
+// }
 // console.log(x);
-// let x;
-// console.log(x);
-
-// problem
-
-var x = 4;
-if (x == 4) {
-  console.log(x);
-  let a = 3;
-  console.log(a);
-}
-console.log(x);
-console.log(a);
+// console.log(a);
 
 // temporal deadzone
 
 // //problem 5
-// function x() {
+// function b() {
 //   console.log("This is inside function", a);
 //   var a = 5;
 //   console.log("value in local scope", a);
@@ -39,14 +44,14 @@ console.log(a);
 // console.log("value in gloabl scope", a);
 // var a = 2;
 // console.log("Value of a after calling the function", a);
+// b();
 // console.log("this is after execution");
-// x();
 
-// proble
+// // problem
 
 // function test() {
 //   console.log("Before declaration: ", x);
-//   var x = 10;
+//  var x = 10;
 //   console.log("After declaration: ", x);
 // }
 // console.log("Outside function: ", x);
@@ -59,11 +64,9 @@ console.log(a);
 //   console.log("Inside first");
 //   second();
 // }
-
 // function second() {
 //   console.log("Inside second");
 // }
-
 // first();
 // console.log("End of script");
 
@@ -83,7 +86,7 @@ console.log(a);
 //   console.log(y);
 // }
 
-// // problem 7
+// //problem 7
 // var a = 5;
 // function test() {
 //   console.log(a);
@@ -104,8 +107,6 @@ console.log(a);
 // test1();
 // a();
 
-// variable and function same name when scope is different.
-
 /** Closures  **/
 
 // //problem 9
@@ -117,12 +118,13 @@ console.log(a);
 //   }
 //   y();
 // }
+// console.log(a);
 // var a = 10;
-// // console.log(a);
 // x();
 // console.log(a);
 
 // //problem 10
+// // var a = 14
 // function x() {
 //     var a = 10;
 //     // console.log(a)
@@ -135,46 +137,83 @@ console.log(a);
 // x();
 // console.log(a)
 
-// // // problem 11
+// // problem 11
 // console.log("before setTimeout");
-
-// setTimeout(() => {
-//   console.log("Timer10");
-// }, 10000);
-
-// setTimeout(() => {
-//   console.log("Timer5");
-// }, 5000);
-
-// console.log("hello world1");
 
 // setTimeout(() => {
 //   console.log("Timer3");
 // }, 3000);
 
+// setTimeout(() => {
+//   console.log("Timer7");
+// }, 7000);
+
+// console.log("hello world1");
+
+// setTimeout(() => {
+//   console.log("Timer5");
+// }, 5000);
+
 // console.log("hello world2");
 
-// function x() {
-//     console.log("this is inside x")
-//     y();
-// }
+// // Problem
+// console.log("A");
 
-// function y() {
-//     console.log("this is inside y")
-// }
-// x();
+// setTimeout(() => {
+//   console.log("B");
+// }, 2000);
 
-// // SetTimeOut
-// //problem 12
-// for (var i = 0; i < 5; i++) {
+// setTimeout(() => {
+//   console.log("C");
+// }, 0);
+
+// console.log("D");
+
+// //problem
+// console.log("Hello");
+// setTimeout(() => {
+//   console.log("X");
+//   setTimeout(() => {
+//     console.log("Z");
+//   }, 1000);
+
+//   console.log("XY");
+// }, 1000);
+// setTimeout(() => {
+//   console.log("A");
+// }, 1500);
+// console.log("Universe");
+
+// // Problem
+// setTimeout(() => console.log("1"), 1000);
+
+// setTimeout(() => console.log("2"), 500);
+
+// setTimeout(() => console.log("3"), 1500);
+
+// setTimeout(() => console.log("4"), 0);
+
+// console.log("5");
+
+// SetTimeOut
+//problem 12
+// function counter() {
+//   for (var i = 0; i < 5; i++) {
 //     // console.log(i*1000)
-//     setTimeout(() => {console.log(i)}, 1000);
+//     function counter1(a) {
+//       setTimeout(() => {
+//         console.log(a);
+//       }, a * 1000);
+//     }
+//     counter1(i);
+//   }
 // }
+// counter();
 
-// problem 13
+// //problem 13
 // let j = 0;
 // for (j = 0; j < 5; j++) {
-//     setTimeout(() => console.log(j), 0);
+//   setTimeout(() => console.log(j), 0);
 // }
 
 // //problem 14
@@ -200,3 +239,99 @@ console.log(a);
 // }
 // console.log("after memory")
 // countMe();
+
+// let x = 6
+
+// let y = 10
+
+// if(x == '6') {
+//   console.log("X")
+// }
+
+// if(y=== '10') {
+//   console.log("Y")
+// }
+
+// console.log("hello");
+
+// setTimeout(() => {
+//   console.log("Inside setTimeout");
+// }, 3000);
+
+// console.log("world");
+
+// function counter() {
+//   for (var i = 1; i <= 4; i++) {
+//     function counter1(i) {
+//       setTimeout(() => {
+//         console.log(i);
+//       }, i * 1000);
+//     }
+
+//     counter1(i);
+//   }
+// }
+// counter();
+// setTimeout(() => {
+//   console.log("Hello world");
+// }, 3000);
+// counter();
+// console.log("Hello universe");
+
+// function counter() {
+//   for (let i = 1; i <= 4; i++) {
+//     function counter1(i) {
+//       setTimeout(() => {
+//         console.log(i);
+//       }, i * 1000);
+//     }
+//     counter1();
+//   }
+// }
+// counter();
+
+// let count = 0;
+// setTimeout(() => {
+//   count += 1;
+//   console.log("Timeout 1:", count);
+// }, 1000);
+// setTimeout(() => {
+//   count += 1;
+//   console.log("Timeout 2:", count);
+// }, 500);
+// console.log("Final:", count);
+
+// console.log("hello");
+
+// setTimeout(() => {
+//   console.log("Inside setTimeout");
+// }, 2000);
+
+// console.log("world");
+
+// let p1 = new Promise((res, rej) => {
+//   res(() => {
+//     console.log("This promise is resolved.");
+//   });
+// });
+
+// // console.log(typeof p1);
+// isOdd(3);
+// function isOdd(a) {
+//   if (a % 2 != 0) {
+//     // some logic
+//     return true;
+//   }
+// }
+// var numb = 3
+// isOdd(numb)
+// var isEven = (a) => {
+//     if (a % 2 == 0) return true;
+// };
+// isEven(2);
+
+// const pi = 3.14;
+
+console.log("a");
+console.log("b");
+console.log("c");

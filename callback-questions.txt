@@ -1,0 +1,40 @@
+
+Easy (Basic Understanding of Callbacks)
+	1.	Write a function greet that takes a name and a callback function. The callback should print “Hello, [name]!”
+Hint: Define a function that takes a name and another function as arguments. Call the function inside with the name.
+	2.	Create a function calculate that takes two numbers and a callback function. The callback should return the sum of the two numbers.
+Hint: Pass two numbers and a function, then execute the function with those numbers to return their sum.
+	3.	Write a function delayedMessage that takes a message and a callback, then calls the callback after 2 seconds.
+Hint: Use setTimeout to delay the execution of the callback function.
+	4.	Create a function processArray that takes an array and a callback function. The callback should print each element of the array.
+Hint: Iterate over the array using forEach or for loop and call the callback function for each element.
+	5.	Implement a function runTwice that takes a callback and runs it twice.
+Hint: Call the given function twice inside runTwice.
+
+
+
+
+Medium (Using Callbacks in Different Scenarios)
+	6.	Write a function filterEvenNumbers that takes an array and a callback function. The callback should return only even numbers.
+Hint: Use filter() to apply the callback function and return only even numbers.
+	7.	Implement a function operate that takes two numbers, an operation (as a callback), and returns the result of the operation (addition, subtraction, multiplication, or division).
+Hint: Pass different operation functions (e.g., add, subtract) as the callback and execute them inside operate.
+	8.	Create a function fetchData that simulates fetching data from a server using setTimeout and calls a callback function with “Data received” after 3 seconds.
+Hint: Use setTimeout to delay calling the callback and pass the data string to it.
+	9.	Write a function modifyString that takes a string and a callback function. The callback should modify the string by converting it to uppercase.
+Hint: Use toUpperCase() inside the callback function to modify the string.
+	10.	Implement a function checkAge that takes an age and a callback function. The callback should determine if the person is an adult (age 18 or older).
+Hint: The callback should check if the number is 18 or greater and return true or false.
+
+Hard (Callbacks in Real-World Situations)
+	11.	Write a function asyncOperation that takes a callback and executes it only if a randomly generated number is greater than 0.5.
+Hint: Use Math.random() to generate a number and execute the callback only if it’s greater than 0.5.
+	12.	Create a function parallelExecution that takes an array of callback functions and executes them all at the same time.
+Hint: Loop through the array and call each function inside the loop.
+	13.	Implement a function chainedCallbacks that takes a number and three callbacks. The first callback should double the number, the second should add 5, and the third should print the final result.
+Hint: Pass the result of one callback to the next until the final result is printed.
+	14.	Write a function readFile that simulates reading a file and calls different callback functions for success or error scenarios.
+Hint: Use Math.random() to simulate success or failure, then call either the success or error callback.
+	15.	Implement a function retryOperation that takes an operation (callback) and retries it up to 3 times if it fails.
+Hint: Use a loop or recursion to retry the function if it doesn’t succeed.
+

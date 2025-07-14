@@ -1,41 +1,65 @@
-let foodOrder = ["pizza", "garlic bread", "pepsi"];
+// let foodOrder = ["pizza", "garlic bread", "pepsi"];
 
-// create order
+// // create order
 
-function createOrder(foodArray, callback) {
-  if (foodArray.length > 0) {
-    setTimeout(() => {
-      let orderID = 89767;
-      console.log(orderID);
-      callback(orderID);
-    }, 4000);
-  }
+// // function createOrderID(callback) {
+// //   let orderID = 89767;
+// //   console.log(orderID);
+// //   callback(orderID);
+// // }
+// function createOrder(foodArray, callback) {
+//   if (foodArray.length > 0) {
+//     setTimeout(() => {
+//       let orderID = 89767;
 
-  // return orderID
+//       callback(orderID);
+//     }, 4000);
+//   }
+
+//   // return orderID
+// }
+
+// // proceed to payment function
+// function payment(orderId, callback) {
+//   if (orderId) {
+//     setTimeout(() => {
+//       let paymentID = 897;
+//       console.log(paymentID);
+//       callback(paymentID);
+//     }, 6000);
+//   }
+//   // returns paymentId
+// }
+
+// // order summary
+
+// function showOrderSummary(paymentid) {
+//   if (paymentid) {
+//     console.log("Your order is created successfully!");
+//   } // returns bool
+// }
+
+// createOrder(foodOrder, (orderID) => {
+//   payment(orderID, (pid) => {
+//     showOrderSummary(pid);
+//   });
+// });
+
+// let orderID = createOrder(foodOrder);
+// let paymentId = payment(orderID);
+// let summary = showOrderSummary(paymentId);
+
+// callback hell!
+
+function sendEmail() {
+  console.log("email sent");
 }
 
-// proceed to payment function
-function payment(orderId, callback) {
-  if (orderId) {
-    setTimeout(() => {
-      let paymentID = 897;
-      console.log(paymentID);
-      callback(paymentID);
-    }, 6000);
-  }
-  // returns paymentId
+function createBooking(data, cb) {
+  console.log(data);
+  cb();
 }
 
-// order summary
-
-function showOrderSummary(paymentid) {
-  if (paymentid) {
-    console.log("Your order is created successfully!");
-  } // returns bool
-}
-
-createOrder(foodOrder, (orderID) => {
-  payment(orderID, (pid) => {
-    showOrderSummary(pid);
-  });
+createBooking({ name: "Isha" }, () => {
+  sendEmail();
 });

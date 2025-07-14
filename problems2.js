@@ -1,4 +1,4 @@
-// problem 1
+// // problem 1
 // const promise = new Promise((resolve, reject) => {
 //   setTimeout(() => resolve("Success!"), 1000);
 // });
@@ -8,10 +8,16 @@
 // });
 // console.log("Waiting for the promise...");
 
-// problem 2
-
+// // problem 2
 // const promise = new Promise((resolve, reject) => {
-//   setTimeout(() => reject("Failed!"), 1000);
+//   let cart = [];
+//   setTimeout(() => {
+//     if (cart.length != 0) {
+//       resolve("orderID 123");
+//     } else {
+//       reject("Cart is empty");
+//     }
+//   }, 1000);
 // });
 
 // promise
@@ -76,7 +82,7 @@
 //     console.error(error);
 //   });
 
-// problem 5
+// // problem 5
 // const promise = new Promise((resolve, reject) => {
 //   setTimeout(() => resolve("Step 1"), 500);
 // });
@@ -94,8 +100,8 @@
 //     console.error(error.message);
 //   });
 
-// problem 6
-// Perform a series of asynchronous operations where each operation depends on the result of the previous one. Use these three functions and log the final result.
+// // problem 6
+// //Perform a series of asynchronous operations where each operation depends on the result of the previous one. Use these three functions and log the final result.
 // function getUser() {
 //   return new Promise((resolve) => {
 //     setTimeout(() => resolve({ id: 1, name: "John Doe" }), 200);
@@ -103,8 +109,8 @@
 // }
 
 // function getOrders(userId) {
-//   return new Promise((resolve) => {
-//     setTimeout(() => resolve(["Order1", "Order2"]), 300);
+//   return new Promise((resolve, reject) => {
+//     setTimeout(() => resolve(["orderID1, orderID2"]), 300);
 //   });
 // }
 
@@ -114,7 +120,7 @@
 //   });
 // }
 
-// // solution
+// solution
 
 // getUser()
 //   .then((user) => {
@@ -129,10 +135,10 @@
 //     console.log("Order Details:", orderDetails);
 //   })
 //   .catch((error) => {
-//     console.error("Error:", error.message);
+//     console.error("Error:", error);
 //   });
 
-// problem 7
+// // problem 7
 // new Promise((resolve, reject) => {
 //   reject("Error occurred");
 // })
@@ -144,7 +150,7 @@
 //     console.log(result);
 //   });
 
-// problem 8
+// // problem 8
 // new Promise((resolve, reject) => {
 //   reject("initial error");
 // })
